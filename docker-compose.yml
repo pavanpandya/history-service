@@ -1,0 +1,9 @@
+services:
+  history-database:
+    image: postgres:alpine
+    container_name: history-database
+    ports:
+      - "4008:5432"
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: history
